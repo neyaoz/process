@@ -15,20 +15,24 @@
     ],
     "require": {
         "php": "^8.1",
-        "illuminate/collections": "^10.0",
-        "illuminate/contracts": "^10.0",
-        "illuminate/macroable": "^10.0",
-        "illuminate/support": "^10.0",
+        "illuminate/collections": "^9.0",
+        "illuminate/contracts": "^9.0",
+        "illuminate/macroable": "^9.0",
+        "illuminate/support": "^9.0",
         "symfony/process": "^6.2"
+    },
+    "conflict": {
+        "illuminate/process": "^10.0"
     },
     "autoload": {
         "psr-4": {
-            "Illuminate\\Process\\": ""
+            "Illuminate\\Process\\": "",
+            "Illuminate\\Contracts\\Process\\": "Contracts/"
         }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "10.x-dev"
+            "dev-master": "9.x-dev"
         }
     },
     "config": {
